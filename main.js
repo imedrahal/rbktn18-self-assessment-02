@@ -45,9 +45,15 @@ function map(array, func) {
 // uppercaseAll(strArr); ==> [ 'HELLO', 'WORLD', 'WHIRLED', 'PEAS' ]
 
 function uppercaseAll(arrayOfStrings) {
-  // TODO: your code here
+  return map(arrayOfStrings,function(element,i){
+    return element.toUpperCase()
+  })
 
 }
+
+
+//description : i used function  map to loop inside the array. the map function give us an array with the same length just we change the values inside the array. 
+
 
 //=============================================================================
 /*                                  Q2                                       */
@@ -78,9 +84,17 @@ var data = [
 // Note: please write one or two lines here describing your solution.
 
 function highestPopulation(arrayOfObjects) {
-  // TODO: your code here
+  return filter(arrayOfObjects,function (element,i){
+    for (var i in element){
+      if(element.population>500000){
+      return element}
+    }
+    return element[i]
+
+  })
 
 }
+
 
 //=============================================================================
 /*                              Q3                                           */
@@ -93,9 +107,13 @@ function highestPopulation(arrayOfObjects) {
 // Note: please write one or two lines here describing your solution.
 
 function halveAll(numbers) {
-  // your code is here
+  return map(numbers,function(element){
+
+    return element/2
+  })
 
 }
+// description; i used the map to loop inside the array and take every value of the array and divided by 2 .
 
 //=============================================================================
 /*                                  Q4                                       */
@@ -105,7 +123,11 @@ function halveAll(numbers) {
 // Note: please write one or two lines here describing your solution.
 
 function values(obj) {
-  // your code is here
+ var arr=[]
+ each(obj,function(obj,key){
+
+ arr.push 
+ })
 
 }
 
